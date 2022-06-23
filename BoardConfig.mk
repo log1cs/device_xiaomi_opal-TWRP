@@ -39,6 +39,11 @@ TARGET_USES_64_BIT_BINDER := true
 # Assert
 TARGET_OTA_ASSERT_DEVICE := opal
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := mt6833
+TARGET_NO_BOOTLOADER := true
+TARGET_USES_UEFI := true
+
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
 #BOARD_RECOVERYIMAGE_PARTITION_SIZE := 134217728 # This is the maximum known partition size, but it can be higher, so we just omit it
@@ -90,3 +95,13 @@ TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
+TW_INCLUDE_NTFS_3G := true
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
+TARGET_USES_MKE2FS := true
+TW_EXCLUDE_TWRPAPP := true
+TW_NO_SCREEN_BLANK := true
+TW_SKIP_COMPATIBILITY_CHECK := true
+TW_SCREEN_BLANK_ON_BOOT := true
+TW_USE_TOOLBOX := true
+
